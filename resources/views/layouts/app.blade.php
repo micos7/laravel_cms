@@ -27,18 +27,26 @@
             </div>
             </div>
             <div class="nav-right">
-            @if(Auth::guest())
+            @if(!Auth::guest())
                 <a href="" class="nav-item is-tab">Login</a>
-                <a href="" class="nav-item is-tab">Signup</a>
+                <a href="" class="nav-item is-tab">Join the community</a>
             @else
                 <button class="dropdown nav-item is-tab">
                 Hey Mihai! <span class="icon"><i class="fa fa-caret-down"></i></span>
                 <ul class="dropdown-menu">
-                    <li><a href="">Profile</a></li>
-                    <li><a href="">Notifications</a></li>
-                    <li><a href="">Settings</a></li>
+                    <li><a href="">
+                    <span class="icon"><i class="fa fa-fw m-r-5 fa-user-circle-o"></i></span>
+                    Profile</a></li>
+                    <li><a href="">
+                    <span class="icon"><i class="fa fa-fw m-r-5  fa-bell"></i></span>
+                    Notifications</a></li>
+                    <li><a href="">
+                    <span class="icon"><i class="fa fa-fw m-r-5  fa-cog"></i></span>
+                    Settings</a></li>
                     <li class="separator"></li>
-                    <li><a href="">Logout</a></li>
+                    <li><a href="">
+                    <span class="icon"><i class="fa fa-fw m-r-5  fa-sign-out"></i></span>
+                    Logout</a></li>
                 </ul>
                 </button>
             @endif
