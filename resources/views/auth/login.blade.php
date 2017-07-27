@@ -27,10 +27,11 @@
     <button class="button is-primary is-outlined is-fullwidth m-t-30">
     Log in
     </button>
-    </div>
-    {{--  end of card  --}}
     </form>
     </div>
+    {{--  end of card  --}}
+    </div>
+    <h5 class="has-text-centered m-t-20"><a href="{{route('password.request')}}" class="is-muted" >Forgot your password?</a></h5>
     </div>
 </div>
 
