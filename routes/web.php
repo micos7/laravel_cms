@@ -19,6 +19,7 @@ Auth::routes();
 
 Route::prefix('manage')->group(function(){
     Route::get('/dashboard', 'ManageController@dashboard')->name('manage.dashboard');
+    Route::get('/', 'ManageController@index');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
