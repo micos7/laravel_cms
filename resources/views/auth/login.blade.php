@@ -4,7 +4,7 @@
 
 <div class="columns">
     <div class="column is-one-third is-offset-one-third m-t-100">
-    <form action="route{{'login'}}" method="POST" role="form">
+    <form action="{{route('login')}}" method="POST" role="form">
     {{csrf_field()}}
     <div class="card">
     <div class="card-content">

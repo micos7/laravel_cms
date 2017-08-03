@@ -36,7 +36,7 @@
                   </span>Notifications
                 </a>
             </li>
-            <li><a href="#">
+            <li><a href="{{route('manage.dasboard')}}">
                   <span class="icon">
                     <i class="fa fa-fw fa-cog m-r-5"></i>
                   </span>Manage
@@ -50,7 +50,7 @@
                   </span>
                   Logout
                 </a>
-                @include('_includes.forms.logout')
+                {{--  @include('_includes.forms.logout')  --}}
             </li>
           </ul>
         </button>
