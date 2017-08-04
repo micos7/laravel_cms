@@ -14,10 +14,10 @@ a.is-muted:hover {
     
     .dropdown-menu {
         display:none;
-        position: absolute;
+        position:absolute;
         left: 0;
-        top: 103%;
-        z-index: 100;
+        top: 100%;
+        z-index: 1000;
         background-color: white;
         min-width: 200px;
         text-align: left;

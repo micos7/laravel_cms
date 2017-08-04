@@ -14,10 +14,10 @@ Vue.use(Buefy);
 var app = new Vue({
     el: '#app',
     date: {}
-})
+});
 
 $(document).ready(function() {
     $('button.dropdown').hover(function(e){
-        $(this).toggleClass('is=open');
+        $(this).toggleClass('is-open');
     })
 })

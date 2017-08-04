@@ -802,7 +802,7 @@ var app = new Vue({
 
 $(document).ready(function () {
     $('button.dropdown').hover(function (e) {
-        $(this).toggleClass('is=open');
+        $(this).toggleClass('is-open');
     });
 });
 

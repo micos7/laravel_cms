@@ -36,7 +36,7 @@
                   </span>Notifications
                 </a>
             </li>
-            <li><a href="{{route('manage.dasboard')}}">
+            <li><a href="">
                   <span class="icon">
                     <i class="fa fa-fw fa-cog m-r-5"></i>
                   </span>Manage
