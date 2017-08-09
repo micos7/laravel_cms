@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use App\Role;
 class RoleController extends Controller
 {
     /**
@@ -10,7 +11,8 @@ class RoleController extends Controller
      */
     public function index()
     {
-        //
+        $roles = Role::All();
+        return view('manage.roles.index')->withRoles($roles);
     }
     /**
      * Show the form for creating a new resource.
