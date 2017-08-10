@@ -41,7 +41,8 @@ class RoleController extends Controller
      */
     public function show($id)
     {
-        //
+        $role = Role::where('id', $id)->with('permissions')->first();
+      return view('manage.roles.show')->withRole($role);
     }
     /**
      * Show the form for editing the specified resource.
