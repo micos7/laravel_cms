@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Role;
+use App\Permission;
 class RoleController extends Controller
 {
     /**
@@ -52,7 +53,9 @@ class RoleController extends Controller
      */
     public function edit($id)
     {
-        //
+        $role = Role::where('id', $id)->with('permissions')->first();
+        $permissions = Permission::all();
+        return view('manage.roles.edit')->withRole($role)->withPermissions($permissions);
     }
     /**
      * Update the specified resource in storage.
