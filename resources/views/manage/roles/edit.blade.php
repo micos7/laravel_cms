@@ -36,7 +36,7 @@
                       <input type="text" class="input" value="{{$role->description}}" id="description" name="description">
                     </p>
                   </div>
-                  <input type="hidden" value="permissionsSelected" name="permissions">
+                  <input type="hidden" :value="permissionsSelected" name="permissions">
                 </div>
               </div>
             </article>
@@ -53,7 +53,7 @@
                   <h2 class="title">Permissions:</h2>
                     @foreach ($permissions as $permission)
                       <div class="field">
-                        <b-checkbox v-model="permissionsSelected" :custom-value="{{$permission->id}}">{{$permission->display_name}} <em>({{$permission->description}})</em></b-checkbox>
+                        <b-checkbox v-model="permissionsSelected" :value="{{$permission->id}}">{{$permission->display_name}} <em>({{$permission->description}})</em></b-checkbox>
                       </div>
                     @endforeach
                 </div>
